@@ -39,9 +39,21 @@ if st.button("Submit Complaint"):
         st.write(f"**Final Priority:** {priority}")
         st.write(f"**Assigned Department:** {department}")
 
-        # Explainability (THIS MAKES YOU STAND OUT)
+        # Explainability
         if sentiment == "Negative":
             st.write("🧠 **Reason:** Complaint shows high emotional distress")
         else:
             st.write("🧠 **Reason:** No critical urgency indicators detected")
+
+        # Admin Summary (INSIDE button block)
+        st.divider()
+        st.subheader("Admin Summary")
+
+        st.write("📌 This grievance has been logged and routed automatically.")
+        st.write("⏱ Estimated manual processing time reduced from hours to seconds.")
+
+        if priority == "HIGH":
+            st.warning("🚨 This complaint has been escalated for immediate action.")
+
+
 

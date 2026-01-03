@@ -10,3 +10,4 @@ def assign_priority(text):
         return "MEDIUM"
     else:
         return "LOW"
+

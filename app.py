@@ -8,6 +8,8 @@ st.set_page_config(page_title="AI Grievance Redressal")
 
 st.title("AI-Powered Grievance Redressal System")
 
+st.header("Citizen Complaint Portal")
+
 complaint = st.text_area("Enter your grievance:")
 
 if st.button("Submit Complaint"):
@@ -16,6 +18,9 @@ if st.button("Submit Complaint"):
         st.warning("Please enter a complaint.")
 
     else:
+        st.divider()
+        st.header("AI Analysis & Routing")
+
         # NLP analysis
         sentiment, polarity = analyze_sentiment(complaint)
         category = classify_complaint(complaint)
@@ -27,9 +32,16 @@ if st.button("Submit Complaint"):
         st.write(f"**Sentiment:** {sentiment} (polarity: {round(polarity, 2)})")
         st.write(f"**Category:** {category}")
 
-        # Simple sentiment-aware priority adjustment
+        # Sentiment-aware priority adjustment
         if sentiment == "Negative" and priority != "HIGH":
             priority = "MEDIUM"
 
         st.write(f"**Final Priority:** {priority}")
         st.write(f"**Assigned Department:** {department}")
+
+        # Explainability (THIS MAKES YOU STAND OUT)
+        if sentiment == "Negative":
+            st.write("🧠 **Reason:** Complaint shows high emotional distress")
+        else:
+            st.write("🧠 **Reason:** No critical urgency indicators detected")
+

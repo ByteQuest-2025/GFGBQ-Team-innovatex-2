@@ -92,7 +92,16 @@ streamlit run app.py
 ---
 
 ## Screenshots
-(Add screenshots of the application interface, analysis results, and admin dashboard here)
+
+### Home Page
+![Home Page](screenshots/home.png)
+
+### Grievance Analysis
+![Analysis](screenshots/analysis.png)
+
+### Admin Dashboard
+![Admin Dashboard](screenshots/admin_dashboard.png)
+
 
 ---
 

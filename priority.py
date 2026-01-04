@@ -36,4 +36,3 @@ def assign_priority(text):
         level = "LOW"
 
     return level, score, reasons
-

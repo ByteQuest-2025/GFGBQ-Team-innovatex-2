@@ -19,7 +19,7 @@ InnovateX
 ---
 
 # Deployed Link (optional)
-https://gfgbq-team-innovatex-2-ysrtvsnudrt322axfpbsyq.streamlit.app/
+https://gfgbq-team-innovatex-2-ysrtvsnudrt322axfpbsyq.streamlit.app
 
 ---
 
@@ -29,7 +29,8 @@ https://gfgbq-team-innovatex-2-ysrtvsnudrt322axfpbsyq.streamlit.app/
 ---
 
 # PPT Link
-(To be updated)
+https://github.com/ByteQuest-2025/GFGBQ-Team-innovatex-2/blob/main/demo/AI-Powered-Grievance-Redressal-System_Team-InnovateX.pdf
+
 
 ---
 

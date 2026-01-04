@@ -24,7 +24,7 @@ https://gfgbq-team-innovatex-2-ysrtvsnudrt322axfpbsyq.streamlit.app
 ---
 
 # 2-minute Demonstration Video link
-(To be updated)
+https://youtu.be/MThwtyLp0KQ
 
 ---
 

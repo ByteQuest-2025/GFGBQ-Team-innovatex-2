@@ -1,67 +1,110 @@
-# AI for Grievance Redressal in Public Governance
+# Problem Statement
+AI for Grievance Redressal in Public Governance
 
-An AI-powered prototype that automatically analyzes citizen grievances, prioritizes them based on urgency and sentiment, and routes them to the appropriate government department for faster resolution.
-
----
-
-## Problem Statement
-Public governance bodies receive thousands of unstructured citizen complaints daily.  
-Manual review causes delays, backlogs, and lack of prioritization, leading to poor citizen satisfaction.
+Public governance bodies receive thousands of citizen grievances every day related to civic infrastructure, sanitation, public safety, utilities, healthcare, education, and administrative delays.  
+These complaints are usually unstructured (free-text), manually reviewed, and slowly routed, leading to delayed resolution, backlog, lack of accountability, and citizen dissatisfaction.  
+There is a strong need for an AI-driven system that can automatically understand, prioritise, and route grievances to enable faster and more transparent governance.
 
 ---
 
-## Our Solution
-We designed an AI-driven grievance redressal system that:
-- Understands free-text citizen complaints
-- Classifies grievances into relevant categories
-- Assigns priority based on urgency and sentiment
-- Routes complaints to the correct department automatically
-- Provides explainable decisions for transparency
+# Project Name
+AI-Powered Grievance Redressal System
+
+---
+
+# Team Name
+InnovateX
+
+---
+
+# Deployed Link (optional)
+https://gfgbq-team-innovatex-2-ysrtvsnudrt322axfpbsyq.streamlit.app/
+
+---
+
+# 2-minute Demonstration Video link
+(To be updated)
+
+---
+
+# PPT Link
+(To be updated)
+
+---
+
+## Project Overview
+The AI-Powered Grievance Redressal System is a web-based application designed to help public governance authorities manage citizen complaints efficiently.  
+The system uses Natural Language Processing (NLP) and sentiment analysis to analyse unstructured grievances, assign explainable priority levels, and automatically route complaints to the appropriate departments.
+
+Safety-critical complaints such as accidents or emergencies are deterministically prioritised and escalated to ensure immediate attention.  
+An admin dashboard provides real-time visibility into complaint volume and high-priority cases, improving decision-making and response time.
+
+---
+
+## Tech Stack
+- Python  
+- Streamlit  
+- Pandas  
+- TextBlob (Sentiment Analysis)  
+- Rule-based NLP  
 
 ---
 
 ## Key Features
-- Rule-based NLP for grievance classification
-- Sentiment analysis to capture emotional urgency
-- Priority-based grievance handling (High / Medium / Low)
-- Automatic department routing
-- Explainable AI outputs
-- Admin summary for governance impact
+- Automatic grievance classification using NLP  
+- Explainable priority scoring (Low / Medium / High)  
+- Sentiment analysis to detect citizen distress  
+- Automatic routing to relevant departments  
+- Safety-critical escalation for emergencies  
+- Real-time admin dashboard with metrics  
+- Deployed and accessible via web  
 
 ---
 
-## Technology Stack
-- Python
-- Streamlit (UI)
-- TextBlob (Sentiment Analysis)
-- Rule-based NLP logic
+## Setup and Installation Instructions
 
----
-
-## Why This Approach
-For public governance systems, transparency and explainability are critical.  
-Rule-based NLP combined with sentiment analysis ensures fast, reliable, and auditable decision-making.
-
----
-
-## Impact & Practicality
-- Reduces manual grievance processing time from hours to seconds
-- Ensures urgent public safety issues are prioritized
-- Scalable for large volumes of citizen complaints
-- Suitable for real-world governance deployment
-
----
-
-## Future Scope
-- Integration with NLP APIs for multilingual complaints
-- Machine learning models for advanced semantic understanding
-- Real-time dashboards for authorities
-- Citizen notifications via SMS / Email
-
----
-
-## How to Run the Project
+1. Clone the repository:
 ```bash
+git clone https://github.com/ByteQuest-2025/GFGBQ-Team-innovatex-2.git
+cd GFGBQ-Team-innovatex-2
+
+2.Install required dependencies:
+
 pip install -r requirements.txt
+3.Run the application:
+
+
 streamlit run app.py
+Usage Instructions
+Enter a grievance in the complaint input box.
+
+Click Submit Complaint.
+
+The system automatically analyses the complaint and displays:
+
+Sentiment analysis
+
+Complaint category
+
+Priority level and score
+
+Assigned department
+
+Admins can monitor complaint statistics and high-priority cases in the sidebar dashboard.
+
+Screenshots
+(Add screenshots of the application interface, analysis results, and admin dashboard here)
+
+Impact and Practicality
+The system reduces grievance processing time from hours to seconds by automating complaint analysis and prioritisation.
+It improves transparency, ensures safety-critical issues are escalated immediately, and provides governance authorities with real-time insights through the admin dashboard.
+
+Future Enhancements
+Multilingual grievance support
+
+Integration with official government grievance portals
+
+Machine learning-based prioritisation models
+
+Advanced analytics and reporting dashboards
 

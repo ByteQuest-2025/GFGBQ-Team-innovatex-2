@@ -24,7 +24,8 @@ if st.button("Submit Complaint"):
         # NLP analysis
         sentiment, polarity = analyze_sentiment(complaint)
         category = classify_complaint(complaint)
-        priority = assign_priority(complaint)
+        priority, score, reasons = assign_priority(complaint)
+
         department = route_department(category)
 
         st.subheader("AI Analysis Result")
@@ -32,18 +33,26 @@ if st.button("Submit Complaint"):
         st.write(f"**Sentiment:** {sentiment} (polarity: {round(polarity, 2)})")
         st.write(f"**Category:** {category}")
 
-        # Sentiment-aware priority adjustment
-        if sentiment == "Negative" and priority != "HIGH":
+        # Sentiment as supporting signal
+        if sentiment == "Negative" and priority == "LOW":
             priority = "MEDIUM"
+            score = max(score, 40)
 
         st.write(f"**Final Priority:** {priority}")
+        st.write(f"**Priority Score:** {score}/100")
+
+        if reasons:
+            st.write("🧠 **Reason(s):**")
+            for r in reasons:
+                st.write(f"- {r}")
+
         st.write(f"**Assigned Department:** {department}")
 
         # Explainability
         if sentiment == "Negative":
             st.write("🧠 **Reason:** Complaint shows high emotional distress")
         else:
-            st.write("🧠 **Reason:** No critical urgency indicators detected")
+            st.write("🧠 **Sentiment Insight:** Complaint tone is neutral")
 
         # Admin Summary (INSIDE button block)
         st.divider()

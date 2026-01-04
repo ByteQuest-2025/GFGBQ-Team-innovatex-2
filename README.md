@@ -66,14 +66,17 @@ An admin dashboard provides real-time visibility into complaint volume and high-
 ## Setup and Installation Instructions
 
 1. Clone the repository:
+
 git clone https://github.com/ByteQuest-2025/GFGBQ-Team-innovatex-2.git
 
 cd GFGBQ-Team-innovatex-2
 
 2. Install required dependencies:
+
 pip install -r requirements.txt
 
-3. Run the application:
+4. Run the application:
+
 streamlit run app.py
 
 
@@ -97,7 +100,7 @@ streamlit run app.py
 ![Home Page](screenshots/home.png)
 
 ### Grievance Analysis
-![Analysis](screenshots/analysis.png)
+![Analysis](screenshots/analysis_result.png)
 
 ### Admin Dashboard
 ![Admin Dashboard](screenshots/admin_dashboard.png)
